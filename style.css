@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Poppins:wght@300&display=swap');
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+}
+
+
+
+@keyframes scroll {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body {
+    background-color: #171717;
+}
+body::-webkit-scrollbar {
+    width: 17px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #11091c;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #71C837;   
+    border-radius: 20px;  
+    border: 2px solid #11091c;  
+  }
+
+.fundo::before {
+    content: "";
+    background-image: url('http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/20191031_141250_49023916946_o.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}  
+header {
+    text-align: center;
+}
+
+.cabecalho{
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    background-color: rgba(0, 0, 0, 0.628);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.titulo {
+    font-size: 2.5em;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+nav{
+    height: 80px;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul li:hover{
+    transform: scale(1.15);
+    transition: .2s;
+    color: aqua;
+}
+
+nav ul{
+    float: right;
+    
+}
+
+nav ul:hover{
+    transition: .2s;
+    color:aqua;
+}
+
+li a:hover{
+    color:aqua;
+    transition: .2s;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    transition: .2s;
+    display: inline-flex;
+    margin: 0 5px;
+    font-size: 15px;
+}
+nav ul li a{
+    color: white;
+    border-radius:4px;
+    text-decoration: none;
+}
+
+ul:hover{
+    color: aqua;
+}
+.titulo::after{
+    content: '|';
+    color:  aqua;
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+  }
+
+.titulo::after{
+    animation: scroll .6s infinite;
+}
+
+.informações {
+    text-align: center;
+    color: #fff;
+}   
+.informações h2 {
+    text-decoration: none;
+    font-size: 2em;
+    padding: 50px;
+}
+.informações h3 {
+    padding: 5px;
+    color: whitesmoke;
+}
+.apoiadores {
+ 
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+.apoiadores h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.apoio img{
+    
+    margin: auto;
+    object-fit: contain;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
