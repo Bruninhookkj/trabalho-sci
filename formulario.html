@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIII - SCI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logotipo-removebg-preview.png">
+</head>
+<body>
+    <section class="fundo">
+        <header>
+            <div class="cabecalho">
+                <div>
+                    <h1 class="titulo">VIII - SCI</h1>
+                </div>
+                <nav class="container">
+                    <ul>
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="#maratona">Maratona</a></li>
+                        <li><a href="#jogos">Jogos Eletrônicos</a></li>
+                        <li><a href="#cronograma">Cronograma</a></li>
+                        <li><a href="#fotos">Fotos</a></li>
+                        <li><a href="formulario.html">inscreva-se</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="container">
+        <form>
+            <fieldset>
+                <legend>inscreva-se</legend>
+
+                <div class="input-container">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome" placeholder=" seu nome" required autofocus>
+                </div>
+                <div class="input-container">
+                    <label for="matricula"></label>
+                    <input type="number" name="matricula" id="matricula" placeholder="sua matricula" required autofocus>
+                </div>
+                <div class="input-container">
+                    <label for="cpf"></label>
+                    <input type="number" name="cpf" id="cpf" minlength="11" placeholder="seu cpf" required autofocus>
+                </div>
+                <div class="input-container">
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" checked="@" placeholder="seu email" required autofocus>
+                </div>
+                <div class="input-container">
+                    <label for="turma"></label>
+                    <input type="text" name="turma" id="turma" placeholder="sua turma" required autofocus>
+                </div>
+                <div class="actions">
+                    <button onclick="alert" type="submit">enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+        <script>
+            alert ("sua inscrição foi confirmado")
+          </script> 
+
+</body>
+
+</html>
