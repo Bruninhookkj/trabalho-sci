@@ -286,5 +286,6 @@ button:hover {
     font-weight: bold;
 }
 label {
+    text-align: left;
     color: #fff;
 }
