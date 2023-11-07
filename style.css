@@ -117,7 +117,7 @@ nav ul:hover {
     color: aqua;
 }
 
-li a:hover {
+li a:hover  {
     color: aqua;
     transition: .2s;
 }
@@ -214,7 +214,7 @@ ul:hover {
 }
 
 form fieldset {
-    height: 400px;
+    height: 500px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 30px;
@@ -224,7 +224,7 @@ form fieldset {
 
 form fieldset::before {
     content: "";
-    background-image: url('http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/20191031_141250_49023916946_o.jpg');
+    background-image: url('http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/20191031_163536_49024124977_o.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -279,10 +279,12 @@ button[type="reset"] {
 button:hover {
     background-color: #0056b3;
 }
-
-footer {
-    background-color: #171717;
-    color: #fff;
+.forms {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 1rem;
+    font-weight: bold;
+}
+label {
+    color: #fff;
 }
