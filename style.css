@@ -222,7 +222,8 @@ form fieldset {
     margin: 40px;
 }
 
-form fieldset::before {
+form fieldset::content  {
+    
     content: "";
     background-image: url('http://videira.ifc.edu.br/tecnico-informatica/wp-content/uploads/sites/18/2020/10/20191031_163536_49024124977_o.jpg');
     background-size: cover;
